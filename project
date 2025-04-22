@@ -1,0 +1,7 @@
+Building in workspace /var/lib/jenkins/workspace/Hello Jenkins
+[Hello Jenkins] $ /bin/sh -xe /tmp/jenkins9832531463361122197.sh
++ mkdir -p /new
+mkdir: cannot create directory ‘/new’: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
+
