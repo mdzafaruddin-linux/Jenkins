@@ -5,3 +5,19 @@ mkdir: cannot create directory ‘/new’: Permission denied
 Build step 'Execute shell' marked build as failure
 Finished: FAILURE
 
+Project Solutions:
+1. Use a directory Jenkins can access
+Instead of /new, use a path inside Jenkins' workspace or somewhere Jenkins has write access:
+
+sh
+Copy
+Edit
+mkdir -p $WORKSPACE/new
+This is the most common fix and works in almost all scenarios.
+
+2. Change directory permissions (not recommended unless you know what you're doing)
+You could change permissions on / or use sudo, but that's risky and not recommended for Jenkins jobs:
+
+Jenkins usually runs as a limited user (like jenkins) for security reasons.
+
+Giving it root access opens you up to big security risks.
