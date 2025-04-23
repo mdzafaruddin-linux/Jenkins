@@ -1,0 +1,7 @@
+CI/CD= Continues Integration and Continues Deploymeint
+1st Job in the sence is a task jobs type free style pr multibranches pipe line
+2nd pipeline : declarative pipeline and scripted pipeline   
+3rd groovy language 
+Ubuntu intance 
+Sudo apt update
+sudo add-apt-repository ppa:openjdk-r/ppa -y sudo apt update sudo apt install openjdk-21-jdk -y
